@@ -4,4 +4,14 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    @include respond(tab-land) {
+        background: url(../assets/img/hero-image-768w.png) no-repeat top center fixed;
+        background-size: 100vw 80vh;
+    }
+
+    @include respond(phone) {
+        background: url(../assets/img/hero-image-375w.png) no-repeat top center fixed;
+        background-size: 100vw 50vh;
+    }
 }

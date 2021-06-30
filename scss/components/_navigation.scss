@@ -25,7 +25,75 @@
         }
 }
 
+
+.nav-bar a {
+    @include respond(tab-land) {
+        display: none;
+    }
+}
+
+.nav-bar a.icon {
+    display: none;
+    @include respond(tab-land) {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 3rem;
+        top: 3rem;
+        background-color: $color-black;
+        border-radius: 50%;
+    }
+}
+
 .sticky {
     background-color: $color-white;
     border-bottom: 1px solid $color-grey-light;
 }
+
+
+.hamburger {
+    width: 3.5rem;
+    height: .5rem;
+    background-color: $color-white;
+    margin: .6rem 0;
+}
+
+
+// Overlay Navigation 
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: $color-secondary;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    &-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    & a {
+        padding: .8rem;
+        text-decoration: none;
+        font-size: 3.6rem;
+        color: $color-black;
+        display: block;
+        transition: 0.3s;
+    } 
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 2rem;
+    right: 4.5rem;
+    font-size: 6rem;
+}
+

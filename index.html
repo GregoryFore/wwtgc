@@ -14,22 +14,37 @@
 <body>
     <header id="navbar" class="header">
         <nav class="nav-bar container hand-writing">
-            <a href="#">RSVP</a>
+            <a href="mailto:gregandclare918@gmail.com">RSVP</a>
             <a href="#event-section">Weekend Events</a>
             <a href="#faqs-section">FAQs</a>
             <a href="#accomodations-section">Where To Stay</a>
             <a href="#attractions-section">Things To Do</a>
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </a>
+        </nav>
+        <nav id="overlayNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="mailto:gregandclare918@gmail.com">RSVP</a>
+                <a href="#event-section" onclick="closeNav()">Weekend Events</a>
+                <a href="#faqs-section" onclick="closeNav()">FAQs</a>
+                <a href="#accomodations-section" onclick="closeNav()">Where To Stay</a>
+                <a href="#attractions-section" onclick="closeNav()">Things To Do</a>
+            </div>
         </nav>
     </header>
     <main>
         <section class="hero-image wedding-hero">
             <div class="container wedding-hero-logo pt-lg">
-                <img src="assets/img/wedding-logo.png" alt="Greg and Clare Logo" />
+                <img srcset="assets/img/wedding-logo.png" alt="Greg and Clare Logo" />
             </div>
         </section>
         <section id="event-section" class="weekend-events">
             <div class="container center-text">
-                <h2 class="center-text pt-xl hand-writing">Weekend Events</h2>
+                <h2 class="center-text pt-xlf hand-writing">Weekend Events</h2>
                 <!-- <div class="weekend-events-day">
                     <div class="blue-brushstroke">
                         <h3 class="center-text brush-title hand-writing">Friday, September 17, 2021</h3>
@@ -236,6 +251,7 @@
         <section id="attractions-section" class="wedding-attractions">
             <div class="container">
                 <h2 class="center-text hand-writing">Things To Do</h2>
+                <p class="wedding-accomodations-text center-text">Coming Soon!</p>
             </div>
         </section>
     </main>

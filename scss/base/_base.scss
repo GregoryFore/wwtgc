@@ -10,7 +10,7 @@ html {
     height: 100%;
     //defines what 1rem is
     font-size: 62.5%; //1 rem = 10px
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 
     @include respond(tab-land) {
         font-size: 56.25%; /* 1rem = 9px, 9/16 56.25% */
