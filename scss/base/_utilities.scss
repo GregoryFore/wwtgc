@@ -1,0 +1,35 @@
+.container {
+    margin: 0 auto;
+    max-width: 122rem;
+    width: 100%;
+    
+    @include respond(nav-port) {
+        padding: 0 1rem;
+    }
+}
+
+.center-text {
+    text-align: center;
+}
+
+.blue-brushstroke {
+    background: url(../assets/img/blue-brushstroke.png) no-repeat center center;
+    margin-bottom: 6rem;
+}
+
+// Padding
+
+.pb-sm { padding-bottom: 3rem;}
+.pb-md {padding-bottom: 6rem;}
+.pb-lg {padding-bottom: 9rem;}
+.pb-xl {padding-bottom: 12rem;}
+
+.pt-sm {padding-top: 3rem;}
+.pt-md {padding-top: 6rem;}
+.pt-lg {padding-top: 9rem;}
+.pt-xl {padding-top: 12rem;}
+
+
+// Margin
+
+.mt-md {margin-top: 6rem;}

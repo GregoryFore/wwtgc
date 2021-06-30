@@ -1,0 +1,15 @@
+#ocean-video {
+    position: relative;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    //background: transparent url() no-repeat;  
+}
+video {display: block; width: 100%;}
+
+.ocean-video-container {
+    width: 100%;
+    max-height: 50rem;
+    overflow: hidden;
+    margin-bottom: 12rem;
+}

@@ -1,0 +1,59 @@
+// 3in1 Wolverine Theme colors
+
+$color-black: #070d0d;
+$color-white: #FFFFFF;
+$color-primary: $color-black;
+$color-secondary: #C4DAE7;
+$color-tertiary: #F3DCBF;
+
+
+
+//grey
+$color-grey-dark: #48484a;
+$color-grey: #cccccc;
+$color-grey-light: #f0f0f0;
+
+
+//Green
+$color-green: #69BC63;
+$color-fyp-green: #28c426;
+
+//Red
+$color-red: #ed4753; 
+
+
+//Wordpress Theme Colors
+
+$colors: (color-black, $color-black),
+         (color-white, $color-white),
+         (color-primary, $color-primary),
+         (color-secondary, $color-secondary),
+         (color-grey-dark, $color-grey-dark),
+         (color-grey, $color-grey),
+         (color-grey-light, $color-grey-light),
+         ('green', $color-green),
+         (color-fyp-green, $color-fyp-green),
+         ('red', $color-red); 
+
+@each $name, $color in $colors {
+    .has-#{$name}-color {
+        color: $color;
+    }
+
+    .has-#{$name}-background-color {
+        background-color: $color;
+    }
+}
+
+
+//Font Sizes
+
+$default-font-size: 2rem;
+
+
+//Buttons
+
+$button-border-radius: 5px;
+$button-bg-color: $color-tertiary;
+$button-hover-text: $color-black;
+$button-hover-bg-color: $color-white;

@@ -1,0 +1,376 @@
+/* Media Query Manager*/
+/*
+0 - 600px:          Phone
+600 - 900px:        Tablet Portrait
+900 - 1200px:       Tablet Landscape
+1200-1800px:        Where Normal Styles are applied
+1800px + :          Big Desktop
+*/
+/*
+$breakpoints:
+- Phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+
+*/
+.has-color-black-color {
+  color: #070d0d;
+}
+
+.has-color-black-background-color {
+  background-color: #070d0d;
+}
+
+.has-color-white-color {
+  color: #FFFFFF;
+}
+
+.has-color-white-background-color {
+  background-color: #FFFFFF;
+}
+
+.has-color-primary-color {
+  color: #070d0d;
+}
+
+.has-color-primary-background-color {
+  background-color: #070d0d;
+}
+
+.has-color-secondary-color {
+  color: #C4DAE7;
+}
+
+.has-color-secondary-background-color {
+  background-color: #C4DAE7;
+}
+
+.has-color-grey-dark-color {
+  color: #48484a;
+}
+
+.has-color-grey-dark-background-color {
+  background-color: #48484a;
+}
+
+.has-color-grey-color {
+  color: #cccccc;
+}
+
+.has-color-grey-background-color {
+  background-color: #cccccc;
+}
+
+.has-color-grey-light-color {
+  color: #f0f0f0;
+}
+
+.has-color-grey-light-background-color {
+  background-color: #f0f0f0;
+}
+
+.has-green-color {
+  color: #69BC63;
+}
+
+.has-green-background-color {
+  background-color: #69BC63;
+}
+
+.has-color-fyp-green-color {
+  color: #28c426;
+}
+
+.has-color-fyp-green-background-color {
+  background-color: #28c426;
+}
+
+.has-red-color {
+  color: #ed4753;
+}
+
+.has-red-background-color {
+  background-color: #ed4753;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* 1200px */
+  /* 1800px */
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+    /* 1rem = 9px, 9/16 56.25% */
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+    /* 1rem = 12px, 12/16 75% */
+  }
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin-bottom: 1.8rem !important;
+}
+
+ul {
+  list-style-position: inside;
+  margin-bottom: 1.5rem;
+}
+
+@font-face {
+  font-family: shree;
+  src: url(../assets/fonts/ShreeDev0714-01.woff);
+}
+@font-face {
+  font-family: shreeBold;
+  src: url(../assets/fonts/ShreeDev0714-Bold-02.woff);
+}
+body {
+  font-family: shree;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.8px;
+  font-size: 1.8rem;
+  color: #070d0d;
+}
+
+h2 {
+  font-size: 6.4rem;
+}
+
+h3 {
+  font-size: 4.8rem;
+}
+
+.shree {
+  font-family: shree;
+}
+
+.shreeBold {
+  font-family: shreeBold;
+}
+
+.hand-writing {
+  font-family: "Amatic SC", cursive;
+}
+
+.brush-title {
+  padding: 2rem 0 0 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 122rem;
+  width: 100%;
+  /* 1080px */
+}
+@media only screen and (max-width: 67.5em) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+.center-text {
+  text-align: center;
+}
+
+.blue-brushstroke {
+  background: url(../assets/img/blue-brushstroke.png) no-repeat center center;
+  margin-bottom: 6rem;
+}
+
+.pb-sm {
+  padding-bottom: 3rem;
+}
+
+.pb-md {
+  padding-bottom: 6rem;
+}
+
+.pb-lg {
+  padding-bottom: 9rem;
+}
+
+.pb-xl {
+  padding-bottom: 12rem;
+}
+
+.pt-sm {
+  padding-top: 3rem;
+}
+
+.pt-md {
+  padding-top: 6rem;
+}
+
+.pt-lg {
+  padding-top: 9rem;
+}
+
+.pt-xl {
+  padding-top: 12rem;
+}
+
+.mt-md {
+  margin-top: 6rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-bar {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.nav-bar a {
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+  font-size: 3.2rem;
+  color: #070d0d;
+  text-decoration: none;
+}
+.nav-bar a:hover {
+  background-color: #F3DCBF;
+}
+
+.sticky {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.hero-image {
+  background: url(../assets/img/hero-image.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 1rem 2.8rem;
+  margin-bottom: 3rem;
+  color: #070d0d;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #f3dcbf;
+  transition: all 0.2s ease-in-out;
+  border: 4px solid #F3DCBF;
+}
+.btn:hover, .btn:link:hover, .btn:visited:hover {
+  background-color: rgba(243, 220, 191, 0);
+}
+.btn:hover {
+  color: #070d0d;
+}
+
+.footer {
+  color: #070d0d;
+  background-color: #C4DAE7;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.wedding-hero {
+  width: 100%;
+  height: 100vh;
+}
+.wedding-hero-logo {
+  max-width: 90rem;
+  text-align: center;
+}
+.wedding-hero img {
+  width: 100%;
+  height: auto;
+}
+
+.weekend-events-day {
+  padding: 6rem 0;
+}
+
+.wedding-faqs-subheader {
+  margin-bottom: 6rem;
+  font-family: shreeBold, sans-serif;
+}
+.wedding-faqs-question {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 0 6rem 0;
+}
+
+.question {
+  font-family: shreeBold, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+#ocean-video {
+  position: relative;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+}
+
+video {
+  display: block;
+  width: 100%;
+}
+
+.ocean-video-container {
+  width: 100%;
+  max-height: 50rem;
+  overflow: hidden;
+  margin-bottom: 12rem;
+}
+
+.event-title {
+  font-family: shreeBold;
+}
+
+.wedding-accomodations {
+  padding: 0 0 6rem 0;
+}
+.wedding-accomodations-text {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=wedding-home.css.map */

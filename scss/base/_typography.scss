@@ -1,0 +1,38 @@
+@font-face {
+    font-family: shree;
+    src: url(../assets/fonts/ShreeDev0714-01.woff);
+}
+
+@font-face {
+    font-family: shreeBold;
+    src: url(../assets/fonts/ShreeDev0714-Bold-02.woff);
+}
+
+
+body {
+    font-family: shree;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: .8px;
+    font-size: 1.8rem;
+    color: $color-black;
+} 
+
+
+h2 {
+    font-size: 6.4rem;
+}
+
+h3 {
+    font-size: 4.8rem;
+}
+
+.shree {font-family: shree;}
+
+.shreeBold { font-family: shreeBold;}
+
+.hand-writing {font-family: 'Amatic SC', cursive;}
+
+.brush-title {
+    padding: 2rem 0 0 0;
+}
