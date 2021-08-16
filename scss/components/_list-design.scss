@@ -1,0 +1,24 @@
+.attraction-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 9rem 0;
+
+    &-item {
+        border: .5rem solid $color-secondary;
+        border-radius: 10px;
+        margin: 2rem 1rem;
+        padding: 1rem;
+        width: 100%;
+        max-width: 30rem;
+        text-align: center;
+        text-decoration: none;
+        color: $color-black;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-secondary;
+        }
+    }
+
+} 

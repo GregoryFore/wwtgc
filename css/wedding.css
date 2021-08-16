@@ -338,24 +338,9 @@ h3 {
 
 .attraction-list {
   display: flex;
-  flex-flow: row wrap;
+  align-items: center;
   justify-content: center;
-  margin: 9rem 0;
-}
-.attraction-list-item {
-  border: 0.5rem solid #C4DAE7;
-  border-radius: 10px;
-  margin: 2rem 1rem;
-  padding: 1rem;
-  width: 100%;
-  max-width: 30rem;
   text-align: center;
-  text-decoration: none;
-  color: #070d0d;
-}
-.attraction-list-item:hover {
-  color: #FFFFFF;
-  background-color: #C4DAE7;
 }
 
 .hero-image {
@@ -500,4 +485,4 @@ video {
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=wedding-home.css.map */
+/*# sourceMappingURL=wedding.css.map */
