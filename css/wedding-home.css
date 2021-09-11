@@ -380,6 +380,10 @@ h3 {
   }
 }
 
+.welcome-hero {
+  background: url(../assets/img/jfg-4.jpg) no-repeat center center;
+}
+
 .btn, .btn:link, .btn:visited {
   display: inline-block;
   position: relative;
@@ -449,6 +453,45 @@ h3 {
 
 .weekend-events-day {
   padding: 6rem 0;
+}
+
+.welcome-hero {
+  width: 100%;
+  height: 70vh;
+  /* 1200px */
+  /* 600px */
+}
+@media only screen and (max-width: 75em) {
+  .welcome-hero {
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .welcome-hero {
+    height: 70vh;
+  }
+}
+.welcome-hero-logo {
+  max-width: 90rem;
+  text-align: center;
+}
+.welcome-hero img {
+  width: 100%;
+  height: auto;
+  /* 1200px */
+  /* 600px */
+}
+@media only screen and (max-width: 75em) {
+  .welcome-hero img {
+    width: 80%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .welcome-hero img {
+    width: 80%;
+    height: auto;
+  }
 }
 
 .wedding-faqs-subheader {
